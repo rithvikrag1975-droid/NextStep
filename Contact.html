@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NextStep</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(12px);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            font-family: 'Gill Sans', sans-serif;
+            font-size: clamp(40px, 6vw, 80px);
+        }
+
+        header a {
+            color: #9ef0c3;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header a:hover {
+            text-shadow: 0 0 8px #9ef0c3;
+        }
+
+        
+        .page {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            max-width: 600px;
+            box-shadow: 0 0 25px rgba(158, 240, 195, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px rgba(158, 240, 195, 0.3);
+        }
+
+        .box h2 {
+            margin-top: 0;
+            font-family: 'Gill Sans', sans-serif;
+            margin: center;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            font-size: 14px;
+        }
+        .text {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .text h2 {
+            font-family: 'Gill Sans', sans-serif;
+            justify-content: center;
+           
+        }
+        .text p {
+            margin-bottom: 15px;
+        }
+
+
+
+        @media (max-width: 900px) {
+            .section,
+            .section.reverse,
+            .box
+            .contact {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .contact {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.12);
+            padding: 30px;
+            border-radius: 20px;
+            font-family: 'Gill Sans', sans-serif;
+}
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #44929c;
+            font-size: 16px;
+            background-color: rgba(158, 240, 195, 0.15);
+}
+
+        .contact button {
+            padding: 15px 30px;
+            background-color: rgba(158, 240, 195, 0.15);
+            color: black;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+}
+
+        .contact button:hover {
+            background-color: rgba(158, 240, 195, 0.15);
+            box-shadow: 0 0 10px rgba(158, 240, 195, 0.3);
+            transform: scale(1.05);
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1><i>NextStep</i></h1>
+    <p>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="Certificates.html">Certificates</a>
+        <a href="Volunteer.html">Volunteering</a>
+        <a href="resume.html">Resume</a>
+        <a href="Tips.html">Tips</a>
+        <a href="Contact.html">Contact</a>
+    </p>
+</header>
+
+<main class="page">
+
+    
+    <section class="section">
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question, idea, or opportunity? Send us a message.
+            </p>
+        </div>
+
+        
+    </section>
+    <section class="section reverse"> 
+        <div class="box">
+            <h2>Email Us</h2>
+            <p>
+                Email<Address>:rithvikrag1975@gmail.com</Address>
+            </p>
+        </div>
+    
+    
+    
+        
+    </section>
+
+   <section class="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/rithvikrag1975@gmail.com" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section> 
+</main>
+
+<footer>
+    <p>© 2026 NextStep. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
