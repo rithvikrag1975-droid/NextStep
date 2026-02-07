@@ -48,67 +48,113 @@
             padding: 60px 20px;
 }
 
-/* SECTIONS */
-        .section {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            margin-bottom: 80px;
-}
 
-        .section.reverse {
-            flex-direction: row-reverse;
-}
 
-/* GLASS BOX */
-        .box,
-        .fun_fact {
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(14px);
-            padding: 35px;
-            border-radius: 22px;
-            max-width: 600px;
-            box-shadow: 0 0 25px rgba(158, 240, 195, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-        .box:hover,
-        .fun_fact:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 0 40px rgba(158, 240, 195, 0.3);
-}
 
-        .box h2,
-        .fun_fact h2 {
-            margin-top: 0;
-            font-size: 28px;
-}
 
-/* IMAGES */
-        .section img {
-            width: 350px;
-            max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.4);
-}
 
 /* CTA BUBBLE */
-        .bubble a {
-            display: inline-block;
-            background: linear-gradient(135deg, #9ef0c3, #4fd1c5);
-            color: #0b1d1f;
-            padding: 18px 32px;
-            border-radius: 999px;
-            font-size: 20px;
-            font-weight: 600;
-            text-decoration: none;
-            box-shadow: 0 0 25px rgba(158, 240, 195, 0.6);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+details {
+    background: rgba(141, 209, 189, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px 25px;
+    margin-bottom: 45px;
+    box-shadow: 0 0 25px rgba(132, 238, 180, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-        .bubble a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(158, 240, 195, 0.9);
+
+
+
+details:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 35px rgba(158, 240, 195, 0.35);
+}
+
+summary {
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.graders-9th {
+    color: black;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    text-shadow: 0 0 25px rgba(132, 238, 180, 0.15);
+}
+
+.graders-9th ul {
+    color: rgb(187, 241, 196);
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    text-shadow: 0 0 25px rgba(132, 238, 180, 0.15);
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background: rgba(132, 238, 180, 0.6);
+    box-shadow: 0 0 12px rgba(132, 238, 180, 0.6);
+    margin: 25px 0;
+}
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.job-box {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 18px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(158, 240, 195, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.job-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(158, 240, 195, 0.35);
+}
+
+.job-box h3 {
+  margin-top: 0;
+  color: #9ef0c3;
+}
+
+
+.job-details {
+    display: none;
+    margin-top: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #d1f2eb;
+    text-decoration: none;
+}
+.job-details a {
+    color: #9ef0c3;
+    text-decoration: none;
+}
+.job-box.active .job-details {
+    display: block;
+}
+
+button {
+    background: #9ef0c3;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* FOOTER */
@@ -120,19 +166,44 @@
 
 /* MOBILE */
         @media (max-width: 900px) {
-            .section,
-            .section.reverse {
-            flex-direction: column;
-            text-align: center;
+            .job-grid {
+            grid-template-columns: 1fr;
+            }
+            
     }
 
-        .section img {
-            width: 260px;
-    }
-}
+        
+
 
     </style>
+    <script>
+function toggleBox(button) {
+    const box = button.parentElement;
+    box.classList.toggle("active");
+}
+</script>
+<script>
+function searchJobs() {
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toLowerCase();
+    let jobBoxes = document.getElementsByClassName('job-box');
+
+    for (let i = 0; i < jobBoxes.length; i++) {
+        let job = jobBoxes[i];
+        let jobText = job.innerText.toLowerCase(); // search in all text inside the box
+
+        if (jobText.indexOf(filter) > -1) {
+            job.style.display = ""; // show box
+        } else {
+            job.style.display = "none"; // hide box
+        }
+    }
+}
+</script>
+
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <body>
 
@@ -153,56 +224,768 @@
 <main class="page">
 
     
-    <section class="section">
-        <div class="box">
-            <h2>Introduction</h2>
+    <details>
+        <summary>9th Grade Jobs</summary>
             <p>
-                This site helps high school students discover extracurricular
-                opportunities such as jobs, internships, volunteering, and skills
-                that match their interests and goals.
-            </p>
-        </div>
+             <div class = "graders-9th"> Many job websites and platforms don't list jobs specifically for 9th graders. However, 9th graders can still print out basic resumes and give it out to local places like resturants, shops, and libraries to see if they are hiring.
+             Send your resume to places such as:
+                <ul>    
+                   <li> Mc Donalds</li>
+                   <li> Chick Fill A</li> 
+                    <li> Local Grocery Stores</li>
+                    <li > Local Libraries</li>
+                    <li> Local Retail Shops</li>
+                    <li> AMC</li>
+                    <li> Taco Bell</li>
+                    <li> Rita's Ice Cream</li>
+                    <li> Local Ice Cream Shops</li>
+                    <li> Local Food Places</li>
+                    <li>Safeway</li>
+                    <li> Publix</li>
+                    <li> Target</li>    
+                    <li> Walmart</li>
+                    <li> Subway</li>
 
-        <img src="images/Volunteer Activity Logo.png" alt="Volunteer">
-    </section>
-    <section class="section reverse"> 
-        <div class="box">
-            <h2>What We Cover</h2>
-            <p>
-                We cover volunteering, internships, jobs, resume tips, and
-                essential skills to help students find the right opportunities.
+
+                </ul> 
+              
+              <div class = "line"></div>
+            <input type="text" id="searchInput" onkeyup="searchJobs()" placeholder="Search job keywords..." style="width:100%; padding:10px; margin-bottom:20px; border-radius:5px; border:none; font-size:16px; color: lightseagreen; font-family: 'Space Grotesk', sans-serif;">
+              <div class="job-grid">
+
+                <div class="job-box">
+                    <h3>Indeed</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Indeed is a popular job search engine that lists various part-time and entry-level jobs.</p>
+                    <p>Tip: Search ‘14/15 year old’ or ‘student’ to find part-time jobs you can do.</p>           
+                    <p>Ages: 14+</p>
+                    <a href="https://www.indeed.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+
+                <div class="job-box">
+                    <h3>Snagajob</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                
+                <div class="job-details">
+                    <p>Snagajob lists hourly jobs, some of which are available to teens.</p>
+                    <p>Tip: Look for hourly jobs and filter by teen-friendly positions.</p>
+                    <p>Ages: 14+</p>
+                    <a href="https://www.snagajob.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>HireTeen</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+
+                <div class="job-details">
+                    <p>HireTeen connects teens with local part-time employers.</p>
+                    <p> Ages: 14-18</p>
+                    <a href="https://www.hireteen.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>SimplyHired</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>SimplyHired is a job search engine that shows all listings from various sources.</p>
+                    <p>Tip: Use keywords like ‘teen jobs’ or ‘part-time jobs for students’ to find suitable positions.</p>
+                    <p>Ages: 14+</p>
+                    <a href="https://www.simplyhired.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>GlassDoor</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>GlassDoor provides job listings along with company reviews and salary information.</p>
+                    <p>Tip: Check company reviews and search for teen-appropriate roles.</p>
+                    <p>Ages: 14+</p>
+                    <a href="https://www.glassdoor.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>JobsForTeenHQ</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>JobsForTeenHQ is a dedicated platform for teen job seekers.</p>
+                    <p>Tip: Find local jobs near you that don’t need a long resume.</p>
+                    <p>Ages: 14-18</p>
+                    <a href="https://www.jobsforteenhq.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>TeenJobsNow</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>TeenJobsNow focuses on connecting teens with local job opportunities.</p>
+                    <p>Tip: Check out part-time jobs designed for 9th graders.</p>
+                    <p>Ages: 14-18</p>
+                    <a href="https://www.teenjobsnow.com" target="_blank">Apply➤</a>
+                </div>
+                </div>    
+                <div class="job-box">
+                    <h3>Raising Teens Today–Jobs</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Raising Teens Today offers a list of job ideas and resources for teens.</p>
+                    <p>Tip: Explore teen-friendly work opportunities close to home.</p>
+                    <p>Ages: 14-18</p>
+                    <a href="https://www.raisingteenstoday.com/teen-jobs/" target="_blank">Apply➤</a>
+            </div>
+            </div>
+             <div class="job-box">
+               <h3>Fiverr</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Fiverr is a platform where freelancers offer services, including those suitable for teens.</p>
+                    <p>Tip: Look for services like graphic design, writing, or tutoring that you can offer.</p>
+                    <p>Ages: 13+</p>
+                    <a href="https://www.fiverr.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            </div>
+
+</div>
+
+</div>
+             </div> 
             </p>
-        </div>
+    </details>
+
         
-        <div class="bubble">
-            <p> 
-                <a href="Form.html">Click here to start your journey!</a>
-            </p>
-        </div>
-    
-    
-        
-    </section>
+    <details>
+        <summary>10th Grade Jobs</summary>
+        <div class = "graders-9th"> Many job websites and platforms don't list jobs specifically for 10th graders. However, 10th graders can still print out basic resumes and give it out to local places like resturants, shops, and libraries to see if they are hiring.
+             Send your resume to places such as:
+                <ul>
+  <li>Restaurants, Cafes, and Fast-Food Chains
+    <ul>
+      <li>McDonald’s, Starbucks, Chick-fil-A</li>
+      <li>Local coffee shops or diners</li>
+      <li>Seasonal or weekend positions</li>
+    </ul>
+  </li>
+  <li>Retail Stores
+    <ul>
+      <li>Target, Walmart, Kohl’s</li>
+      <li>Local boutiques or malls</li>
+      <li>Seasonal cashier or stock roles</li>
+    </ul>
+  </li>
+  <li>Family-Owned or Small Businesses
+    <ul>
+      <li>Local shops, bakeries, or cafes</li>
+      <li>Landscaping or lawn care companies</li>
+      <li>Tutoring or after-school programs</li>
+    </ul>
+  </li>
+  <li>Community Centers
+    <ul>
+      <li>Youth program assistant</li>
+      <li>Summer camp counselor</li>
+      <li>Sports league helper</li>
+    </ul>
+  </li>
+  <li>Libraries
+    <ul>
+      <li>Shelving books</li>
+      <li>Tech assistance for students</li>
+      <li>Library aide or clerical tasks</li>
+    </ul>
+  </li>
+</ul>
+              <div class = "line"></div>
+        <input type="text" id="searchInput" onkeyup="searchJobs()" placeholder="Search job keywords..." style="width:100%; padding:10px; margin-bottom:20px; border-radius:5px; border:none; font-size:16px; color: lightseagreen; font-family: 'Space Grotesk', sans-serif;">
+            <div class="job-grid">
 
-    
-    <section class="section">
-        <div class="box">
-            <h2>About Me</h2>
-            <p>
-                My name is Rithvik Ragesh, and I’m a passionate student and mentor
-                who believes in empowering students to reach their full potential.
-            </p>
-        </div>
+                <div class="job-box">
+                    <h3>Indeed</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Indeed is a popular job search engine that lists various part-time and entry-level jobs.</p>
+                    <p>Tip: Search ‘15/16 year old’ or ‘student’ to find part-time jobs you can do.</p>           
+                    <p>Ages: 15+</p>
+                    <a href="https://www.indeed.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
 
-        <img src="images/Internship.png" alt="Internship">
-    </section>
+                <div class="job-box">
+                    <h3>Snagajob</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                
+                <div class="job-details">
+                    <p>Snagajob lists hourly jobs, some of which are available to teens.</p>
+                    <p>Tip: Look for hourly jobs and filter by teen-friendly positions.</p>
+                    <p>Ages: 15+</p>
+                    <a href="https://www.snagajob.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>GlassDoor</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>GlassDoor provides job listings along with company reviews and salary information.</p>
+                    <p>Tip: Check company reviews and search for teen-appropriate roles.</p>
+                    <p>Ages: 15+</p>
+                    <a href="https://www.glassdoor.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
 
-    <section class="section reverse"> 
-        <div class="fun_fact">
-            <h2>Fun Fact</h2>
-            <p> Over 66 percent of interns secure a full-time job after their internship, and their salaries average $15,000 higher than non-interns! </p>
-        </div>
-    </section>
+               <div class="job-box">
+                    <h3>JobsForTeenHQ</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>JobsForTeenHQ is a dedicated platform for teen job seekers.</p>
+                    <p>Tip: Find local jobs near you that don’t need a long resume.</p>
+                    <p>Ages: 15-18</p>
+                    <a href="https://www.jobsforteenhq.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>TeenJobsNow</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>TeenJobsNow focuses on connecting teens with local job opportunities.</p>
+                    <p>Tip: Check out part-time jobs designed for 10th graders.</p>
+                    <p>Ages: 15-18</p>
+                    <a href="https://www.teenjobsnow.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+                <div class="job-box">
+                    <h3>Raising Teens Today–Jobs</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Raising Teens Today offers a list of job ideas and resources for teens.</p>
+                    <p>Tip: Explore teen-friendly work opportunities close to home.</p> 
+                    <p>Ages: 15-18</p>
+                    <a href="https://www.raisingteenstoday.com/teen-jobs/" target="_blank">Apply➤</a>
+            </div>
+            </div>
+            <div class="job-box">
+               <h3>SimplyHired</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>SimplyHired is a job search engine that shows all listings from various sources.</p>
+                    <p>Tip: Use keywords like ‘teen jobs’ or ‘part-time jobs for students’ to find suitable positions.</p>
+                    <p>Ages: 15+</p>
+                    <a href="https://www.simplyhired.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>HireTeen</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>HireTeen connects teens with local part-time employers.</p>
+                    <p> Ages: 15-18</p>
+                    <a href="https://www.hireteen.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>WayUp</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>WayUp is a platform that connects students and recent graduates with job opportunities.</p>
+                    <p>Tip: Create a profile highlighting your skills and interests to find suitable roles.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.wayup.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Monster</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Monster is a job search engine that aggregates listings from various sources.</p>
+                    <p>Tip: Seasonal or local jobs are more common for teens.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.monster.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Local Youth Employment Services </h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Local Youth Employment Services is a job search engine that lists various job opportunities.</p>
+                    <p>Tip: Search your city name + “teen jobs” for official programs and summer work opportunities.</p>
+                    <p>Ages: 15+</p>
+                    <a href="https://www.careerbuilder.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Fiverr</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Fiverr is a platform where freelancers offer services, including those suitable for teens.</p>
+                    <p>Tip: Look for services like graphic design, writing, or tutoring that you can offer.</p>
+                    <p>Ages: 13+</p>
+                    <a href="https://www.fiverr.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Upwork</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Upwork is a freelancing platform where teens can find part-time gigs.</p>
+                    <p>Tip: Create a profile showcasing your skills and look for teen-friendly projects.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.upwork.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Freelancer</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Freelancer is a platform that connects freelancers with clients looking for various services.</p>
+                    <p>Tip: Search for projects that match your skills and interests.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.freelancer.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>Wyzant</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Wyzant is a platform where individuals can find tutoring opportunities.</p>
+                    <p>Tip: Create a profile showcasing your expertise and look for tutoring opportunities that match your interests.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.wyzant.com" target="_blank">Apply➤</a>
+                </div>
+            </div>
+            <div class="job-box">
+               <h3>VarsityTutors</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>VarsityTutors is a platform that connects students with tutors for academic support.</p>
+                    <p>Tip: Tutor subjects you excel in and set flexible hours.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.varsitytutors.com" target="_blank">Apply➤</a>
+                </div>
+    </details>
+
+    <details>
+        <summary>11th and 12th Grade Jobs</summary>
+            
+            <div class = graders-9th>
+              Many job websites and platforms don't list jobs specifically for 11th and 12th graders. However, 11th and 12th graders can still print out basic resumes and give it out to local places like resturants, shops, and libraries to see if they are hiring.
+                Send your resume to places such as:
+                    <ul>
+  <li>Local Jobs
+    <ul>
+      <li>Restaurants, cafes, and fast-food chains (e.g., McDonald’s, Starbucks, local diners)</li>
+      <li>Retail stores and malls (e.g., Target, Walmart, clothing stores)</li>
+      <li>Family-owned or small businesses (e.g., bakeries, shops, landscaping companies)</li>
+      <li>Grocery stores (bagging, stocking, cashier work)</li>
+      <li>Movie theaters or entertainment venues</li>
+    </ul>
+  </li>
+  
+  <li>Community & Recreation
+    <ul>
+      <li>Community centers (youth program assistant, summer camp helper)</li>
+      <li>Libraries (library aide, clerical tasks, tech help)</li>
+      <li>YMCA / sports clubs (coaching, refereeing, program assistant)</li>
+      <li>Parks & Recreation (lifeguard, camp counselor, sports referee)</li>
+    </ul>
+  </li>
+  
+  <li>Volunteer & Nonprofit Opportunities
+    <ul>
+      <li>Animal shelters or humane societies</li>
+      <li>Museums, cultural centers, or science centers</li>
+      <li>Local charities (fundraising events, summer programs)</li>
+      <li>Hospitals or clinics (teen volunteer or administrative roles)</li>
+    </ul>
+  </li>
+  
+  <li>School & Academic Programs
+    <ul>
+      <li>Peer tutoring or mentoring younger students</li>
+      <li>Teacher/club assistant or office assistant</li>
+      <li>School library aide</li>
+      <li>Work-study programs (if available)</li>
+    </ul>
+  </li>
+  
+  <li>Freelance / Online Jobs
+    <ul>
+      <li>Tutoring (subjects you excel at)</li>
+      <li>Freelance writing, design, or coding</li>
+      <li>Pet sitting / dog walking</li>
+      <li>Yard work / landscaping</li>
+      <li>Babysitting</li>
+    </ul>
+  </li>
+  
+  <li>Pre-College & Internship Programs
+    <ul>
+      <li>STEM or research internships</li>
+      <li>Entrepreneurship programs</li>
+      <li>Summer leadership programs</li>
+      <li>Arts, writing, or music programs</li>
+    </ul>
+  </li>
+</ul>
+              <div class = "line"></div>
+              <input type="text" id="searchInput" onkeyup="searchJobs()" placeholder="Search job keywords..." style="width:100%; padding:10px; margin-bottom:20px; border-radius:5px; border:none; font-size:16px; color: lightseagreen; font-family: 'Space Grotesk', sans-serif;">
+              <div class ="job-grid">
+
+                <div class="job-box">
+                    <h3>Internships.com</h3>
+                    <button onclick="toggleBox(this)">More Info</button>
+                <div class="job-details">
+                    <p>Internships.com is a platform that connects students with internship opportunities.</p>
+                    <p>Tip: Create a profile highlighting your skills and interests to find suitable internships.</p>
+                    <p>Ages: 16+</p>
+                    <a href="https://www.internships.com" target="_blank">Apply➤</a>
+                </div>
+                </div>
+
+                <div class="job-box">
+    <h3>Indeed</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Indeed is a general job board for part-time and local jobs.</p>
+        <p>Tip: Use "high school student" or "teen" in search; filter part-time/local jobs.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.indeed.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Snagajob</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Hourly jobs platform, perfect for teens looking for local part-time work.</p>
+        <p>Tip: Check for teen-friendly positions; seasonal jobs are common.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.snagajob.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Glassdoor</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Job board with company reviews and salaries.</p>
+        <p>Tip: Filter by part-time and local jobs; check teen-friendly workplaces.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.glassdoor.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>SimplyHired</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Search engine for jobs with filters for part-time and location.</p>
+        <p>Tip: Include your age in search terms for teen-friendly positions.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.simplyhired.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Monster</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>General job board with part-time and seasonal opportunities.</p>
+        <p>Tip: Look for local teen-friendly jobs and holiday positions.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.monster.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>ZipRecruiter</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Job aggregator for part-time, weekend, and teen jobs.</p>
+        <p>Tip: Filter for local teen-friendly jobs.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.ziprecruiter.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>CareerBuilder</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>General job board for part-time and teen-friendly roles.</p>
+        <p>Tip: Filter for retail or local positions.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.careerbuilder.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<!-- 8-12: Teen-Specific -->
+<div class="job-box">
+    <h3>WayUp</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Connects students with part-time and remote teen jobs.</p>
+        <p>Tip: Build a profile highlighting skills and interests.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.wayup.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>HireTeen</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Platform for teen job listings in local areas.</p>
+        <p>Tip: Focus on local part-time jobs; check each listing’s age requirement.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.hireteen.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>TeenJobsNow</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Teen-friendly site for seasonal and part-time jobs.</p>
+        <p>Tip: Apply directly through the site; weekend or holiday jobs common.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.teenjobsnow.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>JobsForTeensHQ</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Beginner-friendly teen job site for part-time positions.</p>
+        <p>Tip: Browse local and seasonal jobs; easy application process.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.jobsforteenshq.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Raising Teens Today – Jobs Section</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Local teen job listings updated frequently.</p>
+        <p>Tip: Check regularly; focus on part-time roles.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.raisingteenstoday.com/jobs" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<!-- 13-20: Retail/Food Jobs -->
+<div class="job-box">
+    <h3>McDonald's Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Part-time fast-food jobs.</p>
+        <p>Tip: Ask about after-school and weekend shifts.</p>
+        <p>Ages: 16+</p>
+        <a href="https://careers.mcdonalds.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Starbucks Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Barista and café jobs.</p>
+        <p>Tip: Flexible schedules for students; apply online.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.starbucks.com/careers" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Chick-fil-A Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Part-time teen positions in food service.</p>
+        <p>Tip: Ask about weekend and evening shifts.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.chick-fil-a.com/careers" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Target Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Retail positions including cashier, stocking, and sales.</p>
+        <p>Tip: Seasonal positions available during holidays.</p>
+        <p>Ages: 16+</p>
+        <a href="https://jobs.target.com/" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Walmart Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Retail, stocking, cashier, and order fulfillment.</p>
+        <p>Tip: Seasonal positions often open for teens.</p>
+        <p>Ages: 16+</p>
+        <a href="https://careers.walmart.com/" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Kohl's Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Part-time retail positions.</p>
+        <p>Tip: Holiday seasonal work available.</p>
+        <p>Ages: 16+</p>
+        <a href="https://careers.kohls.com/" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Gap / Old Navy Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Retail part-time positions for teens.</p>
+        <p>Tip: Focus on weekends or holiday season shifts.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.gapinc.com/en-us/careers" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>TJ Maxx / Marshalls Careers</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Retail jobs in sales, stocking, and seasonal positions.</p>
+        <p>Tip: Ask about flexible hours for students.</p>
+        <p>Ages: 16+</p>
+        <a href="https://jobs.tjx.com/" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Local Grocery Stores</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Bagging, cashier, and stocking jobs.</p>
+        <p>Tip: Often hire teens part-time; ask about weekends.</p>
+        <p>Ages: 16+</p>
+        <a href="#" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Movie Theaters (AMC, Regal)</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Concession, usher, and ticketing jobs.</p>
+        <p>Tip: Evening and weekend shifts common.</p>
+        <p>Ages: 16+</p>
+        <a href="#" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<!-- 21-35: Freelance/Online/Other Teen Jobs -->
+<div class="job-box">
+    <h3>Fiverr</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Freelance platform for digital skills like writing, design, and coding.</p>
+        <p>Tip: Parent approval recommended; start small.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.fiverr.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Upwork</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Freelance platform for writing, coding, design, and more.</p>
+        <p>Tip: Start with beginner projects to build ratings.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.upwork.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Freelancer.com</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Freelance jobs for teens with skills in writing, coding, or design.</p>
+        <p>Tip: Take short-term projects to gain experience.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.freelancer.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Tutor.com</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Online tutoring for subjects you excel at.</p>
+        <p>Tip: Flexible hours; perfect for high school students.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.tutor.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Wyzant</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Online or in-person tutoring platform.</p>
+        <p>Tip: Set your own rates and tutor subjects you excel in.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.wyzant.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Varsity Tutors</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Online or in-person tutoring jobs for students.</p>
+        <p>Tip: Flexible hours; great for exam prep tutoring.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.varsitytutors.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>Care.com</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Babysitting, pet sitting, and household tasks.</p>
+        <p>Tip: Set your availability and rates carefully.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.care.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>TaskRabbit</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Local small jobs like cleaning, moving, or handyman work.</p>
+        <p>Tip: Some tasks may require 18+, check age requirements.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.taskrabbit.com" target="_blank">Apply➤</a>
+    </div>
+</div>
+
+<div class="job-box">
+    <h3>GigSmart</h3>
+    <button onclick="toggleBox(this)">More Info</button>
+    <div class="job-details">
+        <p>Short-term local gigs for teens.</p>
+        <p>Tip: Flexible hours and variety of part-time jobs available.</p>
+        <p>Ages: 16+</p>
+        <a href="https://www.gigsmart.com" target="_blank">Apply➤</a>
+    </div>
+    </div>
+            </div>
+    </details>
 
     
 </main>
