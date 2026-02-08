@@ -1,0 +1,1048 @@
+[
+  {
+    "title": "USA.gov – Internships & Fellowships",
+    "age": "16",
+    "majors": [
+      "Civic"
+    ],
+    "keyword": "USA.gov",
+    "details": [
+      "Search by agency and location to gain federal experience.",
+      "Tip: Search by agency and location.",
+      "Ages: 16+",
+      "Major: Public policy, government"
+    ],
+    "link": "https://intern.usajobs.gov/search/results/?wt=15328&s=salary&sd=desc&p=1&hp=student",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "City of Austin Youth Internship",
+    "age": "15",
+    "majors": [
+      "Civic"
+    ],
+    "keyword": "Austin Youth Internship",
+    "details": [
+      "Paid summer opportunities for local youth in public service.",
+      "Tip: Paid summer opportunities.",
+      "Ages: 15–18",
+      "Major: Public service"
+    ],
+    "link": "https://www.austintexas.gov/department/youth-initiatives-office-internship-opportunities",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "San Francisco YouthWorks",
+    "age": "15",
+    "majors": [
+      "Civic"
+    ],
+    "keyword": "San Francisco YouthWorks",
+    "details": [
+      "Paid work readiness program in public service & administration.",
+      "Tip: Paid work readiness.",
+      "Ages: 15+",
+      "Major: Public service & admin"
+    ],
+    "link": "https://www.sfyouthconnect.com/highschoolinternships",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Library of Congress Internships",
+    "age": "16",
+    "majors": [
+      "Civic"
+    ],
+    "keyword": "Library of Congress",
+    "details": [
+      "Assist with archival work and library projects.",
+      "Tip: Highly competitive.",
+      "Ages: 16+",
+      "Major: History, library science"
+    ],
+    "link": "https://www.loc.gov/internships-and-fellowships/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "NASA High School Internships",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "NASA",
+    "details": [
+      "Work with NASA labs and STEM projects. Gain real-world science experience.",
+      "Tip: Paid opportunities; apply yearly and check location eligibility.",
+      "Ages: 16+",
+      "Major: STEM"
+    ],
+    "link": "https://intern.nasa.gov/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Google Computer Science Summer Institute (CSSI)",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Google CSSI",
+    "details": [
+      "Intensive CS program with hands-on coding projects.",
+      "Tip: Competitive — apply early.",
+      "Ages: 16+",
+      "Major: CS/Engineering"
+    ],
+    "link": "https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "MIT Beaver Works Summer Institute",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "MIT Beaver Works",
+    "details": [
+      "Engineering and CS summer program with application required.",
+      "Tip: Application required.",
+      "Ages: 16+",
+      "Major: Engineering/CS"
+    ],
+    "link": "https://careers.ll.mit.edu/search",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "FIRST Robotics Volunteer/Intern",
+    "age": "14",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "FIRST Robotics",
+    "details": [
+      "Mentor or assist workshops for engineering projects.",
+      "Tip: Mentor or workshop help.",
+      "Ages: 14+",
+      "Major: Engineering"
+    ],
+    "link": "https://www.firstinspires.org/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "NIH High School Summer Internship",
+    "age": "16",
+    "majors": [],
+    "keyword": "NIH",
+    "details": [
+      "Lab research opportunities in biomedical sciences.",
+      "Tip: Lab experience; competitive.",
+      "Ages: 16+",
+      "Major: Biomedical science"
+    ],
+    "link": "https://www.nhlbi.nih.gov/grants-and-training/training-and-career-development/summer-internship-program",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "PBS Internship Programs",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "PBS Internship",
+    "details": [
+      "Broadcast and production roles for teens interested in media.",
+      "Tip: Apply early.",
+      "Ages: 16+",
+      "Major: Media/Journalism"
+    ],
+    "link": "https://pennsylvaniapbs.org/careers-internships/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Smithsonian Teen Internship",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Smithsonian",
+    "details": [
+      "Assist museum programs and exhibitions. Build experience in arts and history.",
+      "Tip: Apply early; competitive program.",
+      "Ages: 16+",
+      "Major: Arts & Media"
+    ],
+    "link": "https://internships.si.edu/opportunities",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "National Gallery of Art – Teens",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "National Gallery of Art",
+    "details": [
+      "Teen docent and program support opportunities.",
+      "Tip: Teen docent + program support.",
+      "Ages: 14+",
+      "Major: Art history"
+    ],
+    "link": "https://internshipsnga.onlineapplicationportal.com",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Junior Achievement Programs",
+    "age": "14",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "Junior Achievement",
+    "details": [
+      "Gain experience in business, finance, and entrepreneurship projects.",
+      "Tip: Local chapters vary, search by city.",
+      "Ages: 14+",
+      "Major: Business"
+    ],
+    "link": "https://www.juniorachievement.org/web/ja-usa/volunteer-opportunities",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "DECA Competitive Internships",
+    "age": "14",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "DECA",
+    "details": [
+      "Competitive youth business events and internships.",
+      "Tip: Competitive youth business events.",
+      "Ages: 14+",
+      "Major: Business/Marketing"
+    ],
+    "link": "https://www.deca.org/careers",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Future Business Leaders of America (FBLA)",
+    "age": "14",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "FBLA",
+    "details": [
+      "Leadership and business experiences for teens.",
+      "Tip: Leadership experiences.",
+      "Ages: 14+",
+      "Major: Business"
+    ],
+    "link": "https://www.fbla.org/collegiate/nlc-hs-internship-program/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "CDC Youth Health Internships",
+    "age": "16",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "CDC Youth Health",
+    "details": [
+      "Research and outreach roles in public health.",
+      "Tip: Research + outreach.",
+      "Ages: 16+",
+      "Major: Public health"
+    ],
+    "link": "https://jobs.cdc.gov/working-at-cdc/students.html1",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "National Park Service – Youth Programs",
+    "age": "15",
+    "majors": [
+      "Environment"
+    ],
+    "keyword": "National Park Service",
+    "details": [
+      "Seasonal internships in conservation and environmental science.",
+      "Tip: Seasonal internships often outdoors.",
+      "Ages: 15+",
+      "Major: Environmental science, conservation"
+    ],
+    "link": "https://www.nps.gov/subjects/youthprograms/index.htm",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Smithsonian National Zoo Teen Internship",
+    "age": "14",
+    "majors": [
+      "Environment"
+    ],
+    "keyword": "Smithsonian Zoo",
+    "details": [
+      "Volunteer or shadow animal caretakers at the zoo.",
+      "Tip: Some programs require early application.",
+      "Ages: 14+",
+      "Major: Animal science, biology"
+    ],
+    "link": "https://nationalzoo.si.edu/careers/internships",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "EPA Student Internships",
+    "age": "16",
+    "majors": [
+      "Environment"
+    ],
+    "keyword": "EPA",
+    "details": [
+      "Environmental science and policy internships.",
+      "Tip: Competitive; apply early.",
+      "Ages: 16+",
+      "Major: Environmental science, policy"
+    ],
+    "link": "https://www.epa.gov/careers/student-internships",
+    "link_text": "Apply ➤"
+  },
+
+  {
+    "title": "Simons Summer Research Program",
+    "age": "17",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Simons Summer Research Program",
+    "details": [
+      "Research projects in mathematics and computer science.",
+      "Tip: Application required; competitive. Only rising seniors are eligible.",
+      "Ages: 17+",
+      "Major: Math, CS"
+    ],
+    "link": "https://www.stonybrook.edu/simons/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Research Science Institute (RSI)",
+    "age": "17",
+    "majors": [
+      "Computer Science",
+      "Health"
+    ],
+    "keyword": "Research Science Institute",
+    "details": [
+      "One of the most selective research programs in the world.",
+      "Tip: Participate in hackathons for experience.",
+      "Ages: 17+",
+      "Major: Computer Science, Health"
+    ],
+    "link": "https://www.cee.org/programs/research-science-institute",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Polygence Internships",
+    "age": "14",
+    "majors": [
+      "Computer Science",
+      "Health",
+      "Environment"
+    ],
+    "keyword": "Polygence",
+    "details": [
+      "Research and internship opportunities in STEM fields.",
+      "Tip: Apply early; competitive program.",
+      "Ages: 14+",
+      "Major: Computer Science, Health, Environment"
+    ],
+    "link": "https://www.polygence.org/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Lumiere Education Internships",
+    "age": "14",
+    "majors": [
+      "Computer Science",
+      "Health",
+      "Environment"
+    ],
+    "keyword": "Lumiere Education",
+    "details": [
+      "Research-based internships resulting in papers or projects.",
+      "Tip: Strong academic background in STEM fields required.",
+      "Ages: 14+",
+      "Major: Computer Science, Health, Environment"
+    ],
+    "link": "https://www.lumiereeducation.com/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Veritas AI Internship (VAI)",
+    "age": "14",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Veritas AI",
+    "details": [
+      "AI and machine learning research programs for students.",
+      "Tip: Participate in hackathons for experience.",
+      "Ages: 14+",
+      "Major: Computer Science"
+    ],
+    "link": "https://www.veritasai.com",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Microsoft Discovery Program",
+    "age": "17",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Microsoft Discovery Program",
+    "details": [
+      "Internship and research opportunities in computer science and engineering.",
+      "Tip: Strong academic background in STEM fields required.",
+      "Ages: 17+",
+      "Major: Computer Science"
+    ],
+    "link": "https://careers.microsoft.com/students",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Kode With Klossy (KWK)",
+    "age": "14",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Kode With Klossy",
+    "details": [
+      "Learn web and mobile app development in a collaborative environment.",
+      "Tip: Build a portfolio of coding projects.",
+      "Ages: 13+",
+      "Major: Computer Science"
+    ],
+    "link": "https://www.kodewithklossy.com/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Hackathons (Devpost/MLH)",
+    "age": "14",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Hackathons(Devpost/MLH)",
+    "details": [
+      "Hackathons and coding events for students to build projects.",
+      "Tip: Participate in hackathons for experience.",
+      "Ages: 13+",
+      "Major: Computer Science"
+    ],
+    "link": "https://devpost.com",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "PBS Internship Programs",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "PBS Internship",
+    "details": [
+      "Broadcast and production roles for teens interested in media.",
+      "Tip: Apply early.",
+      "Ages: 16+",
+      "Major: Media/Journalism"
+    ],
+    "link": "https://www.pbs.org/about/careers/internships/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Smithsonian Teen Internship",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Smithsonian",
+    "details": [
+      "Assist museum programs and exhibitions. Build experience in arts and history.",
+      "Tip: Apply early; competitive program.",
+      "Ages: 16+",
+      "Major: Arts & Media"
+    ],
+    "link": "https://www.smithsonianofi.com/internship-opportunities/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "National Gallery of Art – Teens",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "National Gallery of Art",
+    "details": [
+      "Teen docent and program support opportunities.",
+      "Tip: Teen docent + program support.",
+      "Ages: 14+",
+      "Major: Art history"
+    ],
+    "link": "https://www.nga.gov/education/teachers/teens.htm",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "American Red Cross Volunteer/Intern",
+    "age": "15",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "American Red Cross",
+    "details": [
+      "Disaster preparedness and community outreach opportunities.",
+      "Tip: Disaster prep + community outreach.",
+      "Ages: 15+",
+      "Major: Health & Service"
+    ],
+    "link": "https://www.redcross.org/volunteer/become-a-volunteer.html",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Feeding America – Youth Engagement",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Feeding America",
+    "details": [
+      "Assist local food banks with distribution and community outreach.",
+      "Tip: Many local food banks.",
+      "Ages: 14+",
+      "Major: Nutrition, social work"
+    ],
+    "link": "https://www.feedingamerica.org/ways-to-give/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Humane Society Internships",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Humane Society",
+    "details": [
+      "Assist with shelter operations and animal care.",
+      "Tip: Some shelters offer youth roles.",
+      "Ages: 14+",
+      "Major: Animal science"
+    ],
+    "link": "https://www.humanesociety.org/resources/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Habitat for Humanity Volunteer",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Habitat for Humanity",
+    "details": [
+      "Build, advocacy, and administrative work supporting community development.",
+      "Tip: Build, advocacy, admin work.",
+      "Ages: 14+",
+      "Major: Community development"
+    ],
+    "link": "https://www.habitat.org/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "United Way Volunteer Opportunities",
+    "age": "14",
+    "majors": [
+      "Environment"
+    ],
+    "keyword": "United Way",
+    "details": [
+      "Assist with community service projects and program support.",
+      "Tip: Community project involvement.",
+      "Ages: 14+",
+      "Major: Social services"
+    ],
+    "link": "https://www.unitedway.org/our-impact/featured-programs",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Big Brothers Big Sisters Volunteer",
+    "age": "15",
+    "majors": [
+      "Education"
+    ],
+    "keyword": "Big Brothers Big Sisters",
+    "details": [
+      "Mentor youth and provide guidance in education and life skills.",
+      "Tip: Mentoring youth.",
+      "Ages: 15+",
+      "Major: Psychology, education"
+    ],
+    "link": "https://www.bbbs.org/get-involved/volunteer/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Meals on Wheels Volunteer",
+    "age": "15",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Meals on Wheels",
+    "details": [
+      "Deliver meals and support seniors in the community.",
+      "Tip: Delivery + social outreach.",
+      "Ages: 15+",
+      "Major: Nutrition, health"
+    ],
+    "link": "https://www.mealsonwheelsamerica.org/Find-Your-Local-Program",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Boys & Girls Clubs Volunteer",
+    "age": "14",
+    "majors": [
+      "Education"
+    ],
+    "keyword": "Boys & Girls Clubs",
+    "details": [
+      "Assist with after-school programs and youth activities.",
+      "Tip: Help with after-school programs.",
+      "Ages: 14+",
+      "Major: Education"
+    ],
+    "link": "https://www.bgca.org/get-involved/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "YMCA Volunteer Jobs",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "YMCA Volunteer",
+    "details": [
+      "Assist fitness classes and youth programs.",
+      "Tip: Assist classes and staffing.",
+      "Ages: 14+",
+      "Major: Fitness, youth leadership"
+    ],
+    "link": "https://www.ymca.net/get-involved/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "United Nations Youth Volunteers",
+    "age": "18",
+    "majors": [
+      "Civic",
+      "Business"
+    ],
+    "keyword": "UN Youth Volunteers",
+    "details": [
+      "Online service projects supporting global initiatives.",
+      "Tip: Online service projects exist.",
+      "Ages: 18+ (some online roles younger)",
+      "Major: Intl relations, policy"
+    ],
+    "link": "https://www.unv.org/become-a-volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Teen Vogue Internship Guide",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Teen Vogue Internship",
+    "details": [
+      "Various media and marketing opportunities for teens.",
+      "Tip: Links a variety of opportunities.",
+      "Ages: 16+",
+      "Major: Media/Marketing"
+    ],
+    "link": "https://www.teenvogue.com/gallery/internship-opportunities-for-teens",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Local Public Radio Interns (NPR affiliates)",
+    "age": "16",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Local NPR",
+    "details": [
+      "Assist with communications, editing, and broadcast work.",
+      "Tip: Check local station pages.",
+      "Ages: 16+",
+      "Major: Communications"
+    ],
+    "link": "https://www.npr.org/about-npr/178660690/careers",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Local Newspaper Youth Programs (Patch)",
+    "age": "15",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Patch Newspaper",
+    "details": [
+      "Assist local newspapers with reporting and community news.",
+      "Tip: Contact community editors.",
+      "Ages: 15+",
+      "Major: Journalism"
+    ],
+    "link": "https://patch.com/advertise/patchcareers",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "School Newspaper / Yearbook",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "School Newspaper/Yearbook",
+    "details": [
+      "Build published experience in writing, photography, and design.",
+      "Tip: Great for 9th–12th graders, no URL needed.",
+      "Ages: 9th+",
+      "Major: Writing/Design"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Library Teen Zine / Publication Projects",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Library Teen Zine",
+    "details": [
+      "Assist with library publications or teen-focused media projects.",
+      "Tip: Check local library calendars.",
+      "Ages: 14+",
+      "Major: Writing/Art"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Film / Video Youth Projects (NYC)",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Film/Video Projects NYC",
+    "details": [
+      "Participate in workshops and production projects for teens.",
+      "Tip: Workshop + production.",
+      "Ages: 14+",
+      "Major: Film/Media"
+    ],
+    "link": "https://www.nyc.gov/site/mome/teen/film.page",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Local Theater Volunteer Cast / Crew",
+    "age": "14",
+    "majors": [
+      "Arts"
+    ],
+    "keyword": "Local Theater Volunteer",
+    "details": [
+      "Help with productions, sets, or backstage management.",
+      "Tip: Contact community theaters directly.",
+      "Ages: 14+",
+      "Major: Drama / Arts"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "National Institutes of Health (NIH) High School",
+    "age": "16",
+    "majors": [
+      "Science"
+    ],
+    "keyword": "NIH High School",
+    "details": [
+      "Lab experience in biomedical sciences for high school students.",
+      "Tip: Paid and competitive.",
+      "Ages: 16+",
+      "Major: Biomedical Science"
+    ],
+    "link": "https://www.training.nih.gov/programs",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Code.org Intern Programs",
+    "age": "14",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Code.org Intern Programs",
+    "details": [
+      "Assist in teaching beginner computer science and coding workshops.",
+      "Tip: Help teach beginner CS.",
+      "Ages: 14+",
+      "Major: Computer Science"
+    ],
+    "link": "https://code.org",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Museum of Science (Boston)  Intern",
+    "age": "15",
+    "majors": [
+      "Science",
+      "Education"
+    ],
+    "keyword": "Museum of Science Boston",
+    "details": [
+      "Assist with interactive science demos and STEM education programs.",
+      "Tip: Interactive demos.",
+      "Ages: 15+",
+      "Major: Science Education"
+    ],
+    "link": "https://www.mos.org/careers",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "TechSoup Youth Tech Support",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "TechSoup Youth",
+    "details": [
+      "Assist nonprofits with IT and technology tasks.",
+      "Tip: Assist nonprofits.",
+      "Ages: 16+",
+      "Major: IT / Tech"
+    ],
+    "link": "https://www.techsoup.org/about-us",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Udacity Nanodegree Projects (Volunteer)",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Udacity Projects",
+    "details": [
+      "Volunteer to work on Nanodegree projects and build your portfolio.",
+      "Tip: Build portfolio.",
+      "Ages: 16+",
+      "Major: Data / CS"
+    ],
+    "link": "https://www.udacity.com/scholarships",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Girls Who Code Summer Immersion",
+    "age": "16",
+    "majors": [
+      "Computer Science"
+    ],
+    "keyword": "Girls Who Code",
+    "details": [
+      "Summer program to learn CS, coding, and collaboration skills.",
+      "Tip: Free program; apply early.",
+      "Ages: 16+",
+      "Major: Computer Science"
+    ],
+    "link": "https://girlswhocode.com/summer-programs/",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "SCORE Business Mentor Volunteers",
+    "age": "18",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "SCORE Business Mentor",
+    "details": [
+      "Support small business mentorship and virtual business projects.",
+      "Tip: Online help possible for younger teens.",
+      "Ages: 18+",
+      "Major: Entrepreneurship"
+    ],
+    "link": "https://www.score.org/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Chamber of Commerce Youth Boards",
+    "age": "15",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "Chamber of Commerce Youth Boards",
+    "details": [
+      "Participate in local business advisory boards and projects.",
+      "Tip: Contact your local chamber.",
+      "Ages: 15+",
+      "Major: Business / Communications"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Startup Weekend Youth",
+    "age": "16",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "Startup Weekend Youth",
+    "details": [
+      "Rapid prototyping and entrepreneurship events for youth.",
+      "Tip: Work in teams to launch ideas.",
+      "Ages: 16+",
+      "Major: Entrepreneurship"
+    ],
+    "link": "https://www.techstars.com/startup-weekend",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Local Business Incubator Internships",
+    "age": "16",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "Local Business Incubator",
+    "details": [
+      "Help startup companies with admin, research, or marketing.",
+      "Tip: Ask local incubators about youth roles.",
+      "Ages: 16+",
+      "Major: Business"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "E‑commerce Youth Projects",
+    "age": "15",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "E-commerce Youth Projects",
+    "details": [
+      "Build small online stores or assist marketing campaigns.",
+      "Tip: Great for entrepreneurial experience.",
+      "Ages: 15+",
+      "Major: Marketing / Business"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "School Nurse Aide Internships",
+    "age": "10",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "School Nurse Aide",
+    "details": [
+      "Support school health offices with basic tasks and recordkeeping.",
+      "Tip: Check school office for opportunities.",
+      "Ages: 10th+",
+      "Major: Health Education"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Dental Volunteer Youth Programs",
+    "age": "16",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Dental Volunteer Youth Programs",
+    "details": [
+      "Assist local dental clinics with community outreach and prep work.",
+      "Tip: Local clinics may offer youth volunteer spots.",
+      "Ages: 16+",
+      "Major: Dental / Public Health"
+    ],
+    "link": "https://www.ada.org/en/public-programs/dental-student-volunteer-programs",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "YMCA Wellness Assistant",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "YMCA Wellness Assistant",
+    "details": [
+      "Assist fitness programs and youth wellness activities.",
+      "Tip: Help run programs at your local YMCA.",
+      "Ages: 14+",
+      "Major: Fitness"
+    ],
+    "link": "https://www.ymca.net/locations",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Hospital Volunteer Page (Mayo Clinic)",
+    "age": "16",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "Hospital Volunteer Mayo Clinic",
+    "details": [
+      "Volunteer in patient care and hospital support programs.",
+      "Tip: Check age requirements and locations.",
+      "Ages: 16+",
+      "Major: Health"
+    ],
+    "link": "https://www.mayoclinic.org/giving/volunteer",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Small Business Administration Youth Programs",
+    "age": "16",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "SBA Youth Programs",
+    "details": [
+      "Workshops and mentorship to learn business and policy.",
+      "Tip: Contact local SBA offices for youth programs.",
+      "Ages: 16+",
+      "Major: Business / Policy"
+    ],
+    "link": "https://www.sba.gov/offices/headquarters/ocpl/resources/279796",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "Youth Financial Literacy Workshops",
+    "age": "14",
+    "majors": [
+      "Business"
+    ],
+    "keyword": "Youth Financial Literacy",
+    "details": [
+      "Assist peers with understanding finance and budgeting.",
+      "Tip: Volunteer to teach local workshops.",
+      "Ages: 14+",
+      "Major: Economics"
+    ],
+    "link": "#",
+    "link_text": "Apply ➤"
+  },
+  {
+    "title": "American Heart Association Youth Volunteer",
+    "age": "14",
+    "majors": [
+      "Health"
+    ],
+    "keyword": "American Heart Association Youth",
+    "details": [
+      "Assist with awareness campaigns and community health projects.",
+      "Tip: Participate in local events.",
+      "Ages: 14+",
+      "Major: Health"
+    ],
+    "link": "https://www.heart.org/en/get-involved/volunteer",
+    "link_text": "Apply ➤"
+  }
+]
